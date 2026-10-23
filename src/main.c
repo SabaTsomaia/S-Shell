@@ -9,9 +9,8 @@ void evaluate()
     char *buffer = malloc(BUFSIZE * sizeof *buffer);
     char **commands = malloc(CMDSIZE * sizeof *commands);
 
-
-    if (!commands && !buffer) {
-        fprintf(stderr, "S: allocation error\n");
+    if (commands == NULL || buffer == NULL) {
+        fprintf(stderr, "S: allocation Error/Fail\n");
         exit(EXIT_FAILURE);
     }
 

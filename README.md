@@ -1,12 +1,17 @@
 # S-Shell
 
-A small Unix shell written in C.
+A small Unix shell written in C .
 
-## Build
-    gcc -Wall -Wextra src/main.c -o s-shell
-
-## Run
+## Build & Run
+    ```bash
+    make
     ./s-shell
+    ```
+    
+    to remove the compiled binary file
+    ```bash
+    make clean
+    ```
 
 ## License
 
